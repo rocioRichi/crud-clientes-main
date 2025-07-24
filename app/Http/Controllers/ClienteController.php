@@ -36,7 +36,7 @@ class ClienteController extends Controller
     }
 
     /**
-     * Esta accion le llegan los datos del cliente 
+     * Esta accion le llegan los datos del cliente
      * a crear y los almacena
      */
     public function store(Request $request)
@@ -83,7 +83,7 @@ class ClienteController extends Controller
 
 
     /**
-     * Esta accion le llegan los datos del cliente 
+     * Esta accion le llegan los datos del cliente
      * a editar y los actualiza
      */
 
@@ -99,7 +99,7 @@ class ClienteController extends Controller
             'apellidos' => 'required',
             'direccion' => 'required|max:255',
             'telefono' => 'required',
-            'email' => 'required|email|unique:clientes',
+            'email' => 'required|email|unique:clientes,email,' . $cliente->id,
         ], [
             'email.unique' => 'El correo electronico ya existe en el sistema'
         ]);
