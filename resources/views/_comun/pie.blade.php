@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex align-items-center" style="height: 50px">
 
-            <div class="col-md-6 text-center text-md-end text-white"> Aplicacion Web</div>
+            <div class="col-md-6 text-center text-md-end text-white"> CLIENTES 2025</div>
         </div>
     </div>
 </footer>
